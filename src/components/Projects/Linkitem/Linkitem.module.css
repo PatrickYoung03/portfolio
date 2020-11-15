@@ -1,0 +1,16 @@
+.image {
+  width: 90px;
+  height: 90px;
+  border-radius: 11px;
+}
+
+.title {
+  margin-left: 40px;
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
+.text {
+  font-size: 0.8em;
+  margin-left: 40px;
+}

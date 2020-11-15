@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo&display=swap");
+
+html {
+  margin: 0;
+}
+
+.banner {
+  margin: 0;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  font-family: "Cairo", sans-serif;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 40%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.underline {
+  width: 70%;
+  border-top: 5px solid white;
+  align-self: center;
+}
+
+.subtitle {
+  color: white;
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 1%;
+  letter-spacing: 8px;
+}
+
+.mainText {
+  font-size: 5.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 12px;
+  color: white;
+  text-align: center;
+}

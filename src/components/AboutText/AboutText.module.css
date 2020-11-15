@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo&display=swap");
+
+.page {
+  display: flex;
+  height: 50vh;
+  width: 100vw;
+  background: red;
+  font-family: "Cairo", sans-serif;
+  color: white;
+}
+
+.bio {
+  grid-area: bio;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  width: 80%;
+  text-align: center;
+}

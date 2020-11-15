@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color-1: red;
+  --main-color-2: #aa968a;
+  --main-color-3: #bbd1ea;
+  --main-color-4: #0a2472;
+}
