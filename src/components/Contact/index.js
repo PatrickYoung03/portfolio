@@ -1,80 +1,42 @@
-import React, { useState } from "react"
+import React from "react"
 import css from "./Contact.module.css"
 
 function Contact() {
-  const [subject, setSubject] = useState("")
-  const [email, setEmail] = useState("")
-  const [text, setText] = useState("")
-
-  const handleSubjectChange = e => {
-    setSubject(e.target.value)
-    console.log(subject)
-  }
-
-  const handleEmailChange = e => {
-    setEmail(e.target.value)
-    console.log(email)
-  }
-
-  const handleTextChange = e => {
-    setText(e.target.value)
-    console.log(text)
-  }
-
-  // const onFormSubmit = e => {
-  //   e.preventDefault();
-  //   formSubmission({ subject, email, text });
-  // };
-
-  async function postNewEmail(event) {
-    event.preventDefault()
-
-    const res = await fetch("http://localhost:5000/email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        // "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({
-        email,
-        subject,
-        text,
-      }),
-    })
-    const payload = await res.json()
-  }
   return (
     <div className={css.mainContainer}>
-      <form className={css.form}>
-        <h3 className={css.title}>Get in contact:</h3>
-        <div className={css.inputFields}>
-          <input
-            type="text"
-            value={subject}
-            placeholder="Name"
-            name="subject"
-            onChange={handleSubjectChange}
-          ></input>
-          <input
-            type="text"
-            value={email}
-            placeholder="Email"
-            name="email"
-            onChange={handleEmailChange}
-          ></input>
+      <h3 className={css.title}>I would love to hear from you</h3>
+      <div className={css.display}>
+        <div className={css.cv_side}>
+          <p>
+            If you want to know more about my work history you can grab a copy
+            of my CV here:
+          </p>
+          <a href="../../images/PatrickYoungCV.pdf" download>
+            Patrick's CV
+          </a>
         </div>
-        <textarea
-          className={css.text}
-          type="text"
-          value={text}
-          placeholder="Please leave me a message and I will get back to you. Thanks"
-          name="text"
-          onChange={handleTextChange}
-        ></textarea>
-        <div className={css.submit}>
-          <button onClick={postNewEmail}>Submit</button>
+
+        <div className={css.form_side}>
+          <form className={css.form}>
+            <input
+              className={css.input_field}
+              placeholder="What's your name?"
+            ></input>
+            <input
+              className={css.input_field}
+              placeholder="Where can i get back to you?"
+            ></input>
+
+            <textarea
+              className={css.text}
+              type="text"
+              placeholder="What's on your mind?"
+              name="text"
+            ></textarea>
+            <button className={css.submit}>Submit</button>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   )
 }

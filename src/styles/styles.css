@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo&display=swap");
+
 body {
   margin: 0;
   padding: 0;
 }
 
-:root {
-  --main-color-1: red;
-  --main-color-2: #aa968a;
-  --main-color-3: #bbd1ea;
-  --main-color-4: #0a2472;
+html {
+  background-color: red;
+  color: white;
+  font-family: "Cairo", sans-serif;
 }

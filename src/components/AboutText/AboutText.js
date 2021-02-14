@@ -6,6 +6,7 @@ export default function AboutText() {
     <>
       <div className={css.page}>
         <div className={css.bio}>
+          <h1 className={css.about}>About me</h1>
           <p className={css.text}>
             {text.intro}
             <br />
@@ -15,9 +16,6 @@ export default function AboutText() {
             <br />
             {text.contact}
             <br />
-            <a href="../../images/PatrickYoungCV.pdf" download>
-              Patrick's CV
-            </a>
           </p>
         </div>
       </div>

@@ -2,20 +2,25 @@
 
 .page {
   display: flex;
-  height: 50vh;
+  height: 70vh;
   width: 100vw;
   background: red;
-  font-family: "Cairo", sans-serif;
   color: white;
 }
 
 .bio {
-  grid-area: bio;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .text {
   width: 80%;
   text-align: center;
+}
+
+.about {
+  align-self: center;
+  text-decoration: underline;
 }

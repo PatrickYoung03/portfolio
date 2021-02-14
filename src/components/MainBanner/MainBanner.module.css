@@ -22,7 +22,7 @@ html {
   height: 10%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .underline {

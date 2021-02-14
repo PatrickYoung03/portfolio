@@ -12,6 +12,7 @@ const IndexPage = () => (
     <MainBanner />
     <AboutText />
     <Projects />
+    <Contact />
   </>
 )
 

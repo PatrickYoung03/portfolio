@@ -1,16 +1,28 @@
 .image {
-  width: 90px;
-  height: 90px;
+  width: 350px;
+  height: 350px;
   border-radius: 11px;
+  position: absolute;
 }
 
 .title {
-  margin-left: 40px;
   font-size: 1.6rem;
-  text-decoration: underline;
 }
 
 .text {
-  font-size: 0.8em;
-  margin-left: 40px;
+  font-size: 0.6em;
+  padding-right: 15px;
+  width: 60%;
+}
+
+.projectDisplay {
+  width: 350px;
+  height: 350px;
+  padding-left: 5%;
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  display: flex;
+  margin-bottom: 10px;
 }
